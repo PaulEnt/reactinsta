@@ -15,11 +15,11 @@ function App() {
 
   useEffect(()=> {
     fetchPics();
-    console.log(myPics)
   },[])
 
   return (
-    <Container>
+    <div>
+      <button onClick={(event) => setDisplay(!displayImages)}>Click Me On</button>
       {displayImages &&
         myPics.map((item,index) => {
           return (
@@ -31,8 +31,7 @@ function App() {
           )
         })
       }
-      <button onClick={(event) => setDisplay(!displayImages)}>Click Me On</button>
-    </Container>
+    </div>
   );
 }
 
