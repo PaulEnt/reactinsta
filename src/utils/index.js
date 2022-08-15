@@ -75,4 +75,3 @@ export const deleteUser = async (username) => {
         console.log(error)
     }
 }
- 
